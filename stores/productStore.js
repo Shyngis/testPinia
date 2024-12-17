@@ -13,6 +13,7 @@ export const useProductStore = defineStore("productStore", {
         );
         this.products = response.data.content.rows;
         console.log("Response Data:", response.data.content.rows);
+        //fetched data as a object nice job ')
       } catch (error) {
         console.error("Error fetching products:", error);
       }
